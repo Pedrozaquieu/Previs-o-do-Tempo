@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Previsão do Tempo</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title>Linha do Tempo Interativa</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="main">
-        <input type="text" name="" placeholder="Digite o nome da cidade" class="cdd-input">
-        <button class="bnt" onclick="clkButton()">
-            <img src="https://www.svgrepo.com/show/488200/find.svg" alt="busca" class="img-bsc" >
-        </button>
-        <div class="cdd-temp">
-            <h2 class="cidade">Cidade</h2>
-
-            <p class="temp">Temperatura</p>
+    <div class="container">
+        <h1>Minha Linha do Tempo Interativa</h1>
+        <div class="timeline">
+            <img id="timelineImage" src="imagem1.jpg" alt="Linha do Tempo" />
         </div>
-        <div class="clm">
-            <img src="https://openweathermap.org/img/wn/04n.png" alt="ícone do tempo" class="i-tempo">
-            <p class="clima">Clima</p>
-        </div>
-
-        <div class="udd">
-            <p class="umidade">Umidade</p>
+        <div class="controls">
+            <button onclick="alterarImagem('imagem1.jpg')">Imagem 1</button>
+            <button onclick="alterarImagem('imagem2.jpg')">Imagem 2</button>
+            <button onclick="alterarImagem('imagem3.jpg')">Imagem 3</button>
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
-
 </html>
